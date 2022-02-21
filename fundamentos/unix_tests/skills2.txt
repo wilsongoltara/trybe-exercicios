@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+NodeJS
+Python
+DevOps
+NoSQL
+SQL
