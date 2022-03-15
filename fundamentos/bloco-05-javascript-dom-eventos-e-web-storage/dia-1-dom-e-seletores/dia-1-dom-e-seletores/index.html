@@ -59,25 +59,33 @@
 
         const paragraph = document.querySelector('#text');
         const paragraphs = document.querySelectorAll('p');
+        const square = document.querySelector('.center-content');
+        const title = document.querySelector('.title');
+        
         const modifyParagraph = ((paragraph) => {
           paragraph.innerText = 'LOREP IPSUM'
         });
         
         const modifyParagraphToUppercase = (paragraphs) => {
-          for (index in paragraphs) {
+          for (let index in paragraphs) {
             paragraphs[index].innerText = paragraphs[index].innerText.toUpperCase();
           }
         };
-        const square = document.querySelector('.center-content');
         const modifyColor = ((square) => {
           square.style.backgroundColor = 'white';
         });
 
-        const title = document.querySelector('.title')
         const modifyTitle = ((title) => {
           title.innerText = 'Exercício 5.1 - JavaScript';
         });
 
+        const printConsoleText = ((text) => {
+          for (let index in text) {
+            console.log(text[index].innerText);
+          }
+        });
+        
+        printConsoleText(paragraphs);
         modifyParagraph(paragraph);
         modifyParagraphToUppercase(paragraphs);
         modifyTitle(title);
