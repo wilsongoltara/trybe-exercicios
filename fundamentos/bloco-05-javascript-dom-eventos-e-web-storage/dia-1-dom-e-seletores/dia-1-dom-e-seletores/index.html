@@ -56,8 +56,9 @@
         Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
         Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-       const paragraph = document.querySelector('#text');
-       const modifyParagraph = ((paragraph) => {
+
+        const paragraph = document.querySelector('#text');
+        const modifyParagraph = ((paragraph) => {
           paragraph.innerText = 'LOREP IPSUM'
         });
         
@@ -65,6 +66,15 @@
         const modifyColor = ((square) => {
           square.style.backgroundColor = 'white';
         });
+
+        const title = document.querySelector('.title')
+        const modifyTitle = ((title) => {
+          title.innerText = 'Exercício 5.1 - JavaScript';
+        });
+
+        modifyParagraph(paragraph);
+        modifyTitle(title);
+        modifyColor(square);
     </script>
   </body>
 </html>
