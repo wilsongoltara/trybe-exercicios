@@ -90,6 +90,17 @@ const oneToTwentyFive = (() => {
   }
   return numbers;
 });
-console.log(oneToTwentyFive());
+// console.log(oneToTwentyFive());
 
 // 9 - Divide pela metade
+
+const divideByTwo = (() => {
+  const numbers = oneToTwentyFive();
+  let divided = [];
+  numbers.forEach((element) => {
+    divided.push(element / 2);
+  });
+  return divided;
+});
+
+// console.log(divideByTwo());
