@@ -23,7 +23,7 @@ const arithmeticAverage = (numbers) => {
 }
 
 // 4 - Maior que 20
-const heigherThan20 = (numbers) => {
+const higherThan20 = (numbers) => {
   const number = arithmeticAverage(numbers);
   const isgreaterThan20 = number > 20;
 
@@ -33,6 +33,19 @@ const heigherThan20 = (numbers) => {
 
   return 'valor menor igual a 20';
 }
-
 // console.log('Média:' + arithmeticAverage(numbers));
 // console.log(heigherThan20(numbers));
+
+// 5 - Maior valor
+const higherNumber = ((Numbers) => {
+  let height = Numbers[0];
+  Numbers.forEach((element) => {
+    if (element > height) {
+      height = element;
+    }
+  });
+  return height;
+});
+
+// console.log(higherNumber(numbers));
+
