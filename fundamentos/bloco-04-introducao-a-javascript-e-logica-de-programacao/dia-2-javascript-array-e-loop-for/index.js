@@ -79,4 +79,17 @@ const lowerNumber = ((numbers) => {
   return lower;
 });
 
-console.log(lowerNumber(numbers));
+// console.log(lowerNumber(numbers));
+
+
+// 8 - 1 até 25
+const oneToTwentyFive = (() => {
+  let numbers = [];
+  for (let i = 1; i <= 25; i++) {
+    numbers.push(i);
+  }
+  return numbers;
+});
+console.log(oneToTwentyFive());
+
+// 9 - Divide pela metade
