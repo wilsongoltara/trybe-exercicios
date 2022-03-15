@@ -123,5 +123,17 @@ const bubbleSort = ((array) => {
 });
 
 // Bônus 2 - Ordene em ordem decrescente
+const descendingOrder = ((array) => {
+  for (let index = array.length; index >= 0; index -= 1) {
+    for (let secondIndex = array.length - 1; secondIndex > 1; secondIndex -= 1) {
+      if (array[index] < array[secondIndex]) {
+        let position = array[index];
+        array[index] = array[secondIndex];
+        array[secondIndex] = position;
+      }
+    }
+  }
+  return array;
+});
 
 // Bônus 3 - Ordene em ordem crescente
