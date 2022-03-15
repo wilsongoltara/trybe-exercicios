@@ -4,9 +4,9 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //console.log(numbers);
 
 // 2 - soma e imprime todos valores
-function somaValores(numbers) {
+function sum(numbers) {
   let sum = 0;
-  for(let number of numbers) {
+  for (let number of numbers) {
     sum += number;
   }
   return sum;
@@ -14,3 +14,10 @@ function somaValores(numbers) {
 //console.log(somaValores(numbers));
 
 // 3 - Média Aritimética
+const arithmeticAverage = (numbers) => {
+  let sum = 0;
+  for (let number of numbers) {
+    sum += number;
+  }
+  return sum / numbers.length;
+}
