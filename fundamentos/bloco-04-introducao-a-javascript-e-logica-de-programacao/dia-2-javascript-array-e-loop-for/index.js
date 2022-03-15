@@ -137,3 +137,17 @@ const descendingOrder = ((array) => {
 });
 
 // Bônus 3 - Ordene em ordem crescente
+
+const mutiplyByFollowing = ((array) => {
+  let multiplied = [];
+  for (let index = 0; index < array.length; index += 1) {
+    if(array[index + 1]){
+      multiplied.push(array[index] * array[index + 1]);
+    } else {
+      multiplied.push(array[index] * 2);
+    }
+  }
+  return multiplied;
+});
+
+// console.log(mutiplyByFollowing(numbers));
