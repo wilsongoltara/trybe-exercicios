@@ -49,3 +49,22 @@ const higherNumber = ((Numbers) => {
 
 // console.log(higherNumber(numbers));
 
+// 6 - Conta impáres
+
+const oddCount = ((numbers) => {
+  let numberOfodd = 0;
+  numbers.forEach((element) => {
+    if (element % 2 !== 0) {
+      numberOfodd += 1;
+    }
+  });
+
+  const thereIsOdd = numberOfodd > 0;
+  if (thereIsOdd) {
+    return numberOfodd;
+  }
+  
+  return 'nenhum valor ímpar encontrado';
+});
+
+// console.log(oddCount(numbers));
