@@ -50,7 +50,6 @@ const higherNumber = ((Numbers) => {
 // console.log(higherNumber(numbers));
 
 // 6 - Conta impáres
-
 const oddCount = ((numbers) => {
   let numberOfodd = 0;
   numbers.forEach((element) => {
@@ -68,3 +67,16 @@ const oddCount = ((numbers) => {
 });
 
 // console.log(oddCount(numbers));
+
+// 7 - Menor valores
+const lowerNumber = ((numbers) => {
+  let lower = numbers[0];
+  numbers.forEach((element) => {
+    if (element < lower) {
+      lower = element;
+    }
+  });
+  return lower;
+});
+
+console.log(lowerNumber(numbers));
