@@ -104,3 +104,24 @@ const divideByTwo = (() => {
 });
 
 // console.log(divideByTwo());
+
+// Exercícios Bônus
+
+// Bônus 1 - Ordene em ordem crescente
+// Bubble sort
+const bubbleSort = ((array) => {
+  for (let index = 1; index < array.length; index += 1) {
+    for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+      if (array[index] < array[secondIndex]) {
+        let position = array[index];
+        array[index] = array[secondIndex];
+        array[secondIndex] = position;
+      }
+    }
+  }
+  return array;
+});
+
+// Bônus 2 - Ordene em ordem decrescente
+
+// Bônus 3 - Ordene em ordem crescente
