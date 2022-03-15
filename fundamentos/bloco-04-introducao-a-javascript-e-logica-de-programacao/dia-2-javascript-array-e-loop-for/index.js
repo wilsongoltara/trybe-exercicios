@@ -21,3 +21,18 @@ const arithmeticAverage = (numbers) => {
   }
   return sum / numbers.length;
 }
+
+// 4 - Maior que 20
+const heigherThan20 = (numbers) => {
+  const number = arithmeticAverage(numbers);
+  const isgreaterThan20 = number > 20;
+
+  if (isgreaterThan20) {
+    return 'valor maior que 20';
+  }
+
+  return 'valor menor igual a 20';
+}
+
+// console.log('Média:' + arithmeticAverage(numbers));
+// console.log(heigherThan20(numbers));
