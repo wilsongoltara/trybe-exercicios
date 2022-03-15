@@ -58,10 +58,16 @@
         */
 
         const paragraph = document.querySelector('#text');
+        const paragraphs = document.querySelectorAll('p');
         const modifyParagraph = ((paragraph) => {
           paragraph.innerText = 'LOREP IPSUM'
         });
         
+        const modifyParagraphToUppercase = (paragraphs) => {
+          for (index in paragraphs) {
+            paragraphs[index].innerText = paragraphs[index].innerText.toUpperCase();
+          }
+        };
         const square = document.querySelector('.center-content');
         const modifyColor = ((square) => {
           square.style.backgroundColor = 'white';
@@ -73,6 +79,7 @@
         });
 
         modifyParagraph(paragraph);
+        modifyParagraphToUppercase(paragraphs);
         modifyTitle(title);
         modifyColor(square);
     </script>
