@@ -59,8 +59,10 @@
     <script>
       // COLOQUE SEU CÓDIGO AQUI
       let body = document.querySelector('body');
-      let title = document.createElement('h1');
-      let main =  document.createElement('main');
+
+      const createTagElement = ((tag) => {
+        return document.createElement(tag);
+      });
 
       const addText = (element, text) => {
         element.innerHTML = text;
@@ -74,11 +76,22 @@
         element.appendChild(children);
       };
       
+      // 1 - Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body
+      let title = createTagElement('h1');
       addText(title, 'Exercício 5.2');
       addClasses(title, 'title');
       addChildren(body, title);
-      addChildren(body, main);
+
+      // 2 - Adicione a tag section com a classe main-content como filho da tag body
+      let main = createTagElement('main');
       addClasses(main, 'main-content');
+      addChildren(body, main);
+
+      // 3 - Adicione a tag section com a classe center-content como filho da tag main
+      let sectionCenter = createTagElement('section');
+      addClasses(sectionCenter, 'center-content');
+      addChildren(main, sectionCenter);
+
     </script>
   </body>
 </html>
