@@ -112,8 +112,15 @@
       image.setAttribute('src', 'https://picsum.photos/200');
       addClasses(image, 'small-image');
       addChildren(sectionLeft, image);
-      
+
       // 8 - Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+      const list = createTagElement('ul');
+      for (let i = 1; i <= 10; i++) {
+        const listItem = createTagElement('li');
+        addText(listItem, i);
+        addChildren(list, listItem);
+      }
+      addChildren(sectionRight, list);
 
       // 9 - Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2. Cada tag deve ter um valor de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores.
 
