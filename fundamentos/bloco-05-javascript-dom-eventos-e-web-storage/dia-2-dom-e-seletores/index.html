@@ -60,6 +60,8 @@
       // COLOQUE SEU CÓDIGO AQUI
       let body = document.querySelector('body');
       let title = document.createElement('h1');
+      let main =  document.createElement('main');
+
       const addText = (element, text) => {
         element.innerHTML = text;
       };
@@ -75,6 +77,8 @@
       addText(title, 'Exercício 5.2');
       addClasses(title, 'title');
       addChildren(body, title);
+      addChildren(body, main);
+      addClasses(main, 'main-content');
     </script>
   </body>
 </html>
