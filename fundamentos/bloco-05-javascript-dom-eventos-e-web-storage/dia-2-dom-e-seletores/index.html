@@ -58,7 +58,23 @@
   <body>
     <script>
       // COLOQUE SEU CÓDIGO AQUI
+      let body = document.querySelector('body');
+      let title = document.createElement('h1');
+      const addText = (element, text) => {
+        element.innerHTML = text;
+      };
       
+      const addClasses = (element, className) => {
+        element.classList.add(className);
+      };
+
+      const addChildren = (element, children) => {
+        element.appendChild(children);
+      };
+      
+      addText(title, 'Exercício 5.2');
+      addClasses(title, 'title');
+      addChildren(body, title);
     </script>
   </body>
 </html>
