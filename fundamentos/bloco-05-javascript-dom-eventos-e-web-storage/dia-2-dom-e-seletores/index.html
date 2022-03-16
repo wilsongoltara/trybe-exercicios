@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      let body = document.querySelector('body');
+
+      const createTagElement = ((tag) => {
+        return document.createElement(tag);
+      });
+
+      const addText = (element, text) => {
+        element.innerHTML = text;
+      };
+      
+      const addClasses = (element, className) => {
+        element.classList.add(className);
+      };
+
+      const addChildren = (element, children) => {
+        element.appendChild(children);
+      };
+      
+      // 1 - Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body
+      const title = createTagElement('h1');
+      addText(title, 'Exercício 5.2');
+      addClasses(title, 'title');
+      addChildren(body, title);
+
+      // 2 - Adicione a tag section com a classe main-content como filho da tag body
+      const main = createTagElement('main');
+      addClasses(main, 'main-content');
+      addChildren(body, main);
+
+      // 3 - Adicione a tag section com a classe center-content como filho da tag main
+      const sectionCenter = createTagElement('section');
+      addClasses(sectionCenter, 'center-content');
+      addChildren(main, sectionCenter);
+
+      // 4 - Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+      const paragraph = createTagElement('p');
+      addText(paragraph, 'Adicionei a tag p como filho da section criados no passo 3');
+      addChildren(sectionCenter, paragraph);
+
+      // 5 - Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+      const sectionLeft = createTagElement('section');
+      addClasses(sectionLeft, 'left-content');
+      addChildren(main, sectionLeft);
+      
+      // 6 - Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+      const sectionRight = createTagElement('section');
+      addClasses(sectionRight, 'left-content');
+      addChildren(main, sectionRight);
+
+      // 7 - Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
+      const image = createTagElement('img');
+      image.setAttribute('src', 'https://picsum.photos/200');
+      addClasses(image, 'small-image');
+      addChildren(sectionLeft, image);
+
+      // 8 - Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+      const list = createTagElement('ul');
+      for (let i = 1; i <= 10; i++) {
+        const listItem = createTagElement('li');
+        addText(listItem, i);
+        addChildren(list, listItem);
+      }
+      addChildren(sectionRight, list);
+
+      // 9 - Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2. Cada tag deve ter um valor de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores.
+      const listH3 = ['Um', 'Cinco', 'Dez'];
+      
+      listH3.forEach((item) => {
+        const h3 = createTagElement('h3');
+        addText(h3, item);
+        addChildren(main, h3);
+      });
+    </script>
+  </body>
+</html>
