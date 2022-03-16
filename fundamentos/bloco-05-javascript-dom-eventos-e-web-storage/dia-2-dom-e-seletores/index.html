@@ -123,7 +123,13 @@
       addChildren(sectionRight, list);
 
       // 9 - Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2. Cada tag deve ter um valor de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores.
-
+      const listH3 = ['Um', 'Cinco', 'Dez'];
+      
+      listH3.forEach((item) => {
+        const h3 = createTagElement('h3');
+        addText(h3, item);
+        addChildren(main, h3);
+      });
     </script>
   </body>
 </html>
