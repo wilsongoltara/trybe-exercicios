@@ -36,6 +36,26 @@ function indexLowerValue(integers) {
   return indexValue;
 }
 
+function mostCaractere(arrayOfWords) {
+  let lengthWords = {};
+
+  for (let index in arrayOfWords) {
+    lengthWords[arrayOfWords[index]] = arrayOfWords[index].length;
+  }
+
+  let mostWord = '';
+  let aux = 0;
+  for (let key in lengthWords) {
+    if(lengthWords[key] > aux) {
+      aux = lengthWords[key]
+      mostWord = key;
+    }
+  }
+  return mostWord;
+}
+
+console.log(mostCaractere(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']))
+
 function mostRepeat(integers) {
   let repeatNumbers = {};
   
