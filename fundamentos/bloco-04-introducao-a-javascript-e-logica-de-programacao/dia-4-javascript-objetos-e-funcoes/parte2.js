@@ -17,3 +17,17 @@ function indexHighestValue(integers) {
   }
   return indexValue;
 }
+
+function indexLowerValue(integers) {
+  let lowerValue = integers[0];
+  let indexValue = 0;
+  for (let index in integers) {
+    if((integers[index]) < lowerValue) {
+      indexValue = parseInt(index);
+      lowerValue = integers[index];
+    }
+  }
+  return indexValue;
+}
+
+console.log(indexHighestValue([2, 4, 6, 7, 10, 0, -3]))
