@@ -7,27 +7,19 @@ function verificaPalindrome(string) {
 }
 
 function indexHighestValue(integers) {
-  let highestValue = integers[0];
-  let indexValue = 0;
-  for (let index in integers) {
-    if((integers[index]) > highestValue) {
-      indexValue = parseInt(index);
-      highestValue = integers[index];
-    }
-  }
+  let highestValue = integers.reduce((a,b) => {
+    return Math.max(a, b);
+  });
+
+  let indexValue = integers.indexOf(highestValue);
   return indexValue;
 }
 
 function indexLowerValue(integers) {
-  let lowerValue = integers[0];
-  let indexValue = 0;
-  for (let index in integers) {
-    if((integers[index]) < lowerValue) {
-      indexValue = parseInt(index);
-      lowerValue = integers[index];
-    }
-  }
+  let lowerValue = integers.reduce((a,b) => {
+    return Math.min(a, b);
+  });
+
+  let indexValue = integers.indexOf(lowerValue);
   return indexValue;
 }
-
-console.log(indexHighestValue([2, 4, 6, 7, 10, 0, -3]))
