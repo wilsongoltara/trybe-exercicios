@@ -37,3 +37,14 @@ function createDaysOFCalendar(days) {
 }
 
 createDaysOFCalendar(dezDaysList);
+
+function holidaysButton(string) {
+  const containerButtons = document.querySelector('.buttons-container');
+  const btnHolidays = document.createElement('button');
+  btnHolidays.setAttribute('id', 'btn-holiday');
+  btnHolidays.innerHTML = string;
+  
+  containerButtons.appendChild(btnHolidays);
+}
+
+holidaysButton('Feriados');
