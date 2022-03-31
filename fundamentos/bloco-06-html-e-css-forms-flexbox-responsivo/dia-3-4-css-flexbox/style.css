@@ -36,3 +36,15 @@ body {
 .header-img {
   width: 50px;
 }
+
+.main-content-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.description-container {
+  margin: 15px 0;
+  font-size: 20px;
+  opacity: 0.8;
+}
