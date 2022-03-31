@@ -76,3 +76,22 @@ body {
 .gallery-img {
   width: 130px;
 }
+
+
+hr {
+  color: black;
+  width: 200px;
+  margin: 15px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.social-img { 
+  width: 25px;
+  margin-left: 10px;
+}
