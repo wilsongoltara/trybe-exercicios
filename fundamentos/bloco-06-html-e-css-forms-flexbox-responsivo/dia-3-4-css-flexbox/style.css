@@ -48,3 +48,31 @@ body {
   font-size: 20px;
   opacity: 0.8;
 }
+
+
+.technologies-conteiner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.technologies {
+  background-color: rgba(221, 221, 221, 0.984);
+  padding: 15px;
+  border-radius: 7px;
+  min-height: 200px;
+  margin: 5px;
+  width: 30%;
+  box-shadow: 3px 3px 5px rgba(109, 109, 109, 0.281);
+}
+
+.technologies h3 {
+  text-align: center;
+  color: rgba(99, 99, 99, 0.808);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.gallery-img {
+  width: 130px;
+}
