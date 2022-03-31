@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.header-container {
+  background-color: rgb(68, 67, 67);
+  height: 47px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.header-container a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-container a:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.header-container h1 {
+  font-size: 20px;
+}
+
+.header-img {
+  width: 50px;
+}
