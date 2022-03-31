@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.header-container {
+  background-color: rgb(68, 67, 67);
+  height: 47px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.header-container a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-container a:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.header-container h1 {
+  font-size: 20px;
+}
+
+.header-img {
+  width: 50px;
+}
+
+.main-content-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.description-container {
+  margin: 15px 0;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+
+.technologies-conteiner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.technologies {
+  background-color: rgba(221, 221, 221, 0.984);
+  padding: 15px;
+  border-radius: 7px;
+  min-height: 200px;
+  margin: 5px;
+  width: 30%;
+  box-shadow: 3px 3px 5px rgba(109, 109, 109, 0.281);
+}
+
+.technologies h3 {
+  text-align: center;
+  color: rgba(99, 99, 99, 0.808);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.gallery-img {
+  width: 130px;
+}
+
+
+hr {
+  color: black;
+  width: 200px;
+  margin: 15px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.social-img { 
+  width: 25px;
+  margin-left: 10px;
+}
