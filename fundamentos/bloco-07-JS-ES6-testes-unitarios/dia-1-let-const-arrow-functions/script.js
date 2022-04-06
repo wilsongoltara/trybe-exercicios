@@ -19,4 +19,16 @@ const fatorial = (number) => {
   return number === 0 ? 1 : number * fatorial(number - 1);
 };
 
-console.log(fatorial(4))
+// console.log(fatorial(4));
+
+const longestWords = (phrase) => {
+  let longestWord =  phrase.split(' ')[0];
+  for (let word of phrase.split(' ')) {
+    if (word.length > longestWord.length) {
+      longestWord = word;
+    }
+  }
+  console.log(longestWord);
+};
+
+longestWords('Antônio foi no banheiro e não sabemos o que aconteceu');
