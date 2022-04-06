@@ -31,4 +31,15 @@ const longestWords = (phrase) => {
   console.log(longestWord);
 };
 
-longestWords('Antônio foi no banheiro e não sabemos o que aconteceu');
+// longestWords('Antônio foi no banheiro e não sabemos o que aconteceu');]
+
+const btn = document.getElementById('btn');
+const paragraphCount = document.getElementById('count');
+let clickCount = 0;
+
+const countClick = () => {
+  clickCount += 1;
+  paragraphCount.innerHTML = clickCount;
+};
+
+btn.addEventListener('click', countClick);
