@@ -46,7 +46,7 @@ const longestWords = (phrase) => {
 
 
 const replaceWord = (word) => {
-  let stringDetermined = 'Welcome, x Goltara'.split(' ');
+  let stringDetermined = 'Tryber, x aqui!'.split(' ');
   for (let index = 0; index < stringDetermined.length; index += 1) {
     if (stringDetermined[index] === 'x') {
       stringDetermined.splice(index, 1, word);
@@ -55,4 +55,12 @@ const replaceWord = (word) => {
   return stringDetermined.join(' ');
 };
 
-console.log(replaceWord('Wilson'));
+// console.log(replaceWord('Wilson'));
+
+const skills = ['React', 'Node', 'Jest', 'Heroku', 'Express'];
+
+const concatString = (string) => {
+  return `${string} Minhas cinco principais habilidades são: ${skills.sort().join(', ')}.`;
+}
+
+console.log(concatString(replaceWord('Wilson')));
