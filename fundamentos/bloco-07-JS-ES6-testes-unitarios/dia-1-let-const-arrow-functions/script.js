@@ -33,13 +33,26 @@ const longestWords = (phrase) => {
 
 // longestWords('Antônio foi no banheiro e não sabemos o que aconteceu');]
 
-const btn = document.getElementById('btn');
-const paragraphCount = document.getElementById('count');
-let clickCount = 0;
+// const btn = document.getElementById('btn');
+// const paragraphCount = document.getElementById('count');
+// let clickCount = 0;
 
-const countClick = () => {
-  clickCount += 1;
-  paragraphCount.innerHTML = clickCount;
+// const countClick = () => {
+//   clickCount += 1;
+//   paragraphCount.innerHTML = clickCount;
+// };
+
+// btn.addEventListener('click', countClick);
+
+
+const replaceWord = (word) => {
+  let stringDetermined = 'Welcome, x Goltara'.split(' ');
+  for (let index = 0; index < stringDetermined.length; index += 1) {
+    if (stringDetermined[index] === 'x') {
+      stringDetermined.splice(index, 1, word);
+    }
+  }
+  return stringDetermined.join(' ');
 };
 
-btn.addEventListener('click', countClick);
+console.log(replaceWord('Wilson'));
