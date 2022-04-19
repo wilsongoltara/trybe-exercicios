@@ -62,6 +62,20 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
-function authorBornIn1947(books) {
+function authorBornIn1947() {
   return books.find(book => book.author.birthYear === 1947);
 }
+
+function smallerName() {
+  let nameBook = books[0].name;
+  // escreva aqui o seu código
+  books.forEach((book) => {
+    if (book.name.length < nameBook.length) {
+      nameBook = book.name;
+    }
+  });
+  // Variável nameBook que receberá o valor do menor nome;
+  return nameBook;
+}
+
+console.log(smallerName());
