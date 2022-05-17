@@ -70,27 +70,26 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 ##### Bloco 9: [JavaScript Assíncrono e Promises]
 - [x] 9.1 - JavaScript Assíncrono e Callbacks
 - [x] 9.2 - JavaScript Promises
-- [ ] 9.3 - Projeto - Carrinho de Compras
+- [x] 9.3 - Projeto - Carrinho de Compras
  
 ##### Bloco 10: [Testes automatizados com Jest]
-- [ ] 10.1 - Primeiros passos no Jest
-- [ ] 10.2 - Jest - Testes Assíncronos
-- [ ] 10.3 - Jest - Simulando comportamentos
-- [ ] 10.4 - Projeto - Jest Assíncrono e Mocking
+- [x] 10.1 - Primeiros passos no Jest
+- [x] 10.2 - Jest - Testes Assíncronos
+- [x] 10.3 - Jest - Simulando comportamentos
 
 ## Desenvolvimento Front-end :heavy_check_mark:
 
 ##### Bloco 11: [Introdução à React](
-- [ ] 11.1 - Introdução - Front-end
-- [ ] 11.1 - Introdução - React
-- [ ] 11.1 - 'Hello, world!' no React!
-- [ ] 11.2 - Componentes React
-- [ ] 11.3 - Projeto - Movie Cards Library
+- [x] 11.1 - Introdução - Front-end
+- [x] 11.1 - Introdução - React
+- [x] 11.1 - 'Hello, world!' no React!
+- [x] 11.2 - Componentes React
+- [x] 11.3 - Projeto - Solar System
 
 ##### Bloco 12: [Componentes com Estado, Eventos e Formulários com React]
-- [ ] 12.1 - Componentes com estado e eventos
-- [ ] 12.2 - Formulários no React
-- [ ] 12.3 - Projeto - Movie Cards Library Stateful
+- [x] 12.1 - Componentes com estado e eventos
+- [x] 12.2 - Formulários no React
+- [ ] 12.3 - Projeto - Tryunfo
 
 ##### Bloco 13: [Ciclo de Vida de Componentes e React Router]
 - [ ] 13.1 - Ciclo de vida de componentes
